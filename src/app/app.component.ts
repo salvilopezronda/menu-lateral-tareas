@@ -45,7 +45,7 @@ export class AppComponent implements OnInit {
       id: 5,
       titulo: 'Enviar el informe',
       descripcion: 'Enviar el informe mensual al supervisor',
-      estado: 2,
+      estado: 1,
       tipologia: 1,
       fecha:'15/05/2023 12:45m '
     }),
