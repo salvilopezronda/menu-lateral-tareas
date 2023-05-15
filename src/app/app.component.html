@@ -8,9 +8,13 @@
     ></button>
   </div>
   <div class="offcanvas-body">
+    <div class="form-group mt-3 mb-3">
+      <input type="date" class="form-control" [ngModel]="selectedDate">
+    </div>
     <div *ngFor="let tarea of listaTareas">
       <div class="card " [ngStyle]="{ 'background-color': getColorCaja(tarea.estado) }">
         <div class="card-body">
+          <p [ngStyle]="{'color':'black', 'font-weight': 'bold'}" class="mb-1">{{tarea.fecha}}</p>
           <h5   [ngStyle]="{ 'color': getColorTitulo(tarea.tipologia) }" class="card-title">{{ tarea.titulo }}</h5>
           <p class="card-text">{{ tarea.descripcion }}</p>
           <div class="d-flex justify-content-evenly">
