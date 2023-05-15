@@ -11,7 +11,6 @@ export class Tarea {
     this.estado = (data && data.estado) || null;
     this.tipologia = (data && data.tipologia) || null;
   }
-
   public toService() {
     const obj: any = new Object();
     obj.id = this.id;
